@@ -1,0 +1,189 @@
+{
+  "_comment": "Curated watchlist of major rotational / APM programs for 2027 new grads. Edit freely — rotational_sheet.py seeds any program listed here into the 'Rotational Programs' tab (it never deletes rows you add by hand in the Sheet). 'window' is the typical application window based on past cycles.",
+  "programs": [
+    {
+      "program": "Google APM",
+      "company": "Google",
+      "window": "Aug–Sep 2026",
+      "link": "https://buildyourfuture.withgoogle.com/programs/apm"
+    },
+    {
+      "program": "Meta RPM (Rotational Product Manager)",
+      "company": "Meta",
+      "window": "Aug–Oct 2026",
+      "link": "https://www.metacareers.com/jobs?q=Rotational%20Product%20Manager"
+    },
+    {
+      "program": "LinkedIn APM / Business Leadership Program",
+      "company": "LinkedIn",
+      "window": "Sep–Oct 2026",
+      "link": "https://careers.linkedin.com/students"
+    },
+    {
+      "program": "Uber APM",
+      "company": "Uber",
+      "window": "Sep 2026 (sporadic)",
+      "link": "https://www.uber.com/us/en/careers/teams/university/"
+    },
+    {
+      "program": "DE Shaw Rotational Program",
+      "company": "DE Shaw",
+      "window": "Rolling, fall 2026",
+      "link": "https://www.deshaw.com/careers/campus",
+      "aliases": [
+        "D. E. Shaw",
+        "D.E. Shaw",
+        "The D. E. Shaw Group"
+      ]
+    },
+    {
+      "program": "Capital One Product Development Program (PDP)",
+      "company": "Capital One",
+      "window": "Aug–Sep 2026",
+      "link": "https://campus.capitalone.com/"
+    },
+    {
+      "program": "Salesforce APM (Futureforce)",
+      "company": "Salesforce",
+      "window": "Sep–Oct 2026",
+      "link": "https://careers.salesforce.com/en/futureforce/"
+    },
+    {
+      "program": "Microsoft Product Manager (New Grad)",
+      "company": "Microsoft",
+      "window": "Aug–Oct 2026",
+      "link": "https://careers.microsoft.com/v2/global/en/universityhires"
+    },
+    {
+      "program": "Duolingo APM",
+      "company": "Duolingo",
+      "window": "Sep 2026",
+      "link": "https://careers.duolingo.com/"
+    },
+    {
+      "program": "Robinhood APM",
+      "company": "Robinhood",
+      "window": "Fall 2026 (sporadic)",
+      "link": "https://careers.robinhood.com/"
+    },
+    {
+      "program": "Coinbase APM",
+      "company": "Coinbase",
+      "window": "Fall 2026",
+      "link": "https://www.coinbase.com/careers/students"
+    },
+    {
+      "program": "TikTok Product Manager (Campus)",
+      "company": "Bytedance",
+      "window": "Aug–Oct 2026",
+      "link": "https://lifeattiktok.com/campus",
+      "aliases": [
+        "TikTok",
+        "ByteDance"
+      ]
+    },
+    {
+      "program": "Adobe APM",
+      "company": "Adobe",
+      "window": "Fall 2026",
+      "link": "https://careers.adobe.com/us/en/university"
+    },
+    {
+      "program": "Roblox APM",
+      "company": "Roblox",
+      "window": "Fall 2026",
+      "link": "https://careers.roblox.com/early-career"
+    },
+    {
+      "program": "Fidelity National Information Services New-Grad PM",
+      "company": "Fidelity National Information Services",
+      "window": "First seen 2026-09-17",
+      "link": "https://fis.wd5.myworkdayjobs.com/searchjobs/job/US-FL-JAX-347/Product-Management--FIS-University-Program_JR0309693",
+      "auto": true
+    },
+    {
+      "program": "Stripe New-Grad PM",
+      "company": "Stripe",
+      "window": "First seen 2026-09-15",
+      "link": "https://stripe.com/jobs/search?gh_jid=7737124",
+      "auto": true
+    },
+    {
+      "program": "The Walt Disney Company APM",
+      "company": "The Walt Disney Company",
+      "window": "First seen 2026-09-15",
+      "link": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Glendale-CA-USA/Associate-Product-Manager-Program_10160554",
+      "auto": true
+    },
+    {
+      "program": "Lowe's APM",
+      "company": "Lowe's",
+      "window": "First seen 2026-09-14",
+      "link": "https://lowes.wd5.myworkdayjobs.com/en-US/LWS_External_CS/job/Lowes-Charlotte-Technology-Hub-3505/Associate-Product-Manager---Launchpad_JR-02641560",
+      "auto": true
+    },
+    {
+      "program": "IXL Learning APM",
+      "company": "IXL Learning",
+      "window": "First seen 2026-09-03",
+      "link": "https://www.ixl.com/company/jobs?gh_jid=8765765002",
+      "auto": true
+    },
+    {
+      "program": "LPL Financial Holdings New-Grad PM",
+      "company": "LPL Financial Holdings",
+      "window": "First seen 2026-08-13",
+      "link": "https://lplfinancial.wd1.myworkdayjobs.com/university/job/Fort-MillCharlotte/New-Grad---2027---Product_R-052468-1",
+      "auto": true
+    },
+    {
+      "program": "Uncountable New-Grad PM",
+      "company": "Uncountable",
+      "window": "First seen 2026-08-05",
+      "link": "https://jobs.ashbyhq.com/uncountable/1f8425be-cd39-4397-a9c1-6511ecfc39fc/application",
+      "auto": true
+    },
+    {
+      "program": "Micron Technology New-Grad PM",
+      "company": "Micron Technology",
+      "window": "First seen 2026-08-05",
+      "link": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/HBM-Product-Manager--New-College-Grad-_JR102001",
+      "auto": true
+    },
+    {
+      "program": "Databricks APM",
+      "company": "Databricks",
+      "window": "First seen 2026-08-05",
+      "link": "https://boards.greenhouse.io/embed/job_app?token=7586263002",
+      "auto": true
+    },
+    {
+      "program": "Intuit New-Grad PM",
+      "company": "Intuit",
+      "window": "First seen 2026-10-02",
+      "link": "https://jobs.intuit.com/job/mountain-view/product-manager-2-rotational-product-management-rpm-program/27595/101456093584",
+      "auto": true
+    },
+    {
+      "program": "Figma APM",
+      "company": "Figma",
+      "window": "First seen 2026-10-07",
+      "link": "https://boards.greenhouse.io/figma/jobs/6180116004?gh_jid=6180116004",
+      "auto": true
+    },
+    {
+      "program": "ID.me APM",
+      "company": "ID.me",
+      "window": "First seen 2026-10-15",
+      "link": "https://job-boards.greenhouse.io/idmeuniversityrecruiting/jobs/7986694003",
+      "auto": true
+    },
+    {
+      "program": "Applied Materials New-Grad PM",
+      "company": "Applied Materials",
+      "window": "First seen 2026-10-19",
+      "link": "https://amat.wd1.myworkdayjobs.com/External/job/Santa-ClaraCA/Service-Product-Manager-Product-Line-Management-New-College-Grad--Master-s--Santa-Clara--CA-Austin--TX-_R2629842",
+      "auto": true
+    }
+  ]
+}

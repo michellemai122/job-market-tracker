@@ -1,0 +1,74 @@
+[
+  {
+    "company": "Mercor",
+    "provider": "ashby",
+    "slug": "mercor",
+    "count": 78
+  },
+  {
+    "company": "Lovable",
+    "provider": "ashby",
+    "slug": "lovable",
+    "count": 64
+  },
+  {
+    "company": "Replit",
+    "provider": "ashby",
+    "slug": "replit",
+    "count": 89
+  },
+  {
+    "company": "ElevenLabs",
+    "provider": "ashby",
+    "slug": "elevenlabs",
+    "count": 225
+  },
+  {
+    "company": "Decagon",
+    "provider": "ashby",
+    "slug": "decagon",
+    "count": 122
+  },
+  {
+    "company": "Harvey",
+    "provider": "ashby",
+    "slug": "harvey",
+    "count": 358
+  },
+  {
+    "company": "Cognition",
+    "provider": "ashby",
+    "slug": "cognition",
+    "count": 79
+  },
+  {
+    "company": "Physical Intelligence",
+    "provider": "ashby",
+    "slug": "physicalintelligence",
+    "count": 29
+  },
+  {
+    "company": "Sierra",
+    "provider": "ashby",
+    "slug": "sierra",
+    "count": 188
+  },
+  {
+    "company": "Baseten",
+    "provider": "ashby",
+    "slug": "baseten",
+    "count": 64
+  },
+  {
+    "company": "Vercel",
+    "provider": "greenhouse",
+    "slug": "vercel",
+    "count": 80
+  },
+  {
+    "company": "Suno",
+    "provider": "ashby",
+    "slug": "suno",
+    "count": 65
+  }
+]

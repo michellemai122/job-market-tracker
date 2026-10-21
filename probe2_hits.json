@@ -1,0 +1,38 @@
+[
+  {
+    "company": "Jane Street",
+    "provider": "greenhouse",
+    "slug": "janestreet",
+    "count": 225
+  },
+  {
+    "company": "Anthropic",
+    "provider": "greenhouse",
+    "slug": "anthropic",
+    "count": 398
+  },
+  {
+    "company": "OpenAI",
+    "provider": "ashby",
+    "slug": "openai",
+    "count": 735
+  },
+  {
+    "company": "Anysphere Cursor",
+    "provider": "ashby",
+    "slug": "cursor",
+    "count": 113
+  },
+  {
+    "company": "Ramp",
+    "provider": "ashby",
+    "slug": "ramp",
+    "count": 120
+  },
+  {
+    "company": "Jump Trading",
+    "provider": "greenhouse",
+    "slug": "jumptrading",
+    "count": 106
+  }
+]

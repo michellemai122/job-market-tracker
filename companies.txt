@@ -1,0 +1,97 @@
+# Target companies. One per line. Optional "  ats:token" hints can be added later.
+DE Shaw
+Google
+Meta
+Uber
+LinkedIn
+Atlassian
+Microsoft
+Salesforce
+Coinbase
+DoorDash
+Stripe
+Visa
+Intuit
+Databricks
+Instacart
+Adobe
+Airbnb
+Amazon
+American Express
+Appian
+Arcade AI
+Asana
+Blackrock
+Bytedance
+Cisco
+Citrix
+Dropbox
+Duolingo
+Ebay
+Electronic Arts
+Expedia Group
+Figma
+Indeed
+IXL Learning
+Kleiner Perkins
+Lenovo
+Lyft
+Mastercard
+Miro
+Mojang
+Mozilla
+Notion
+OKX
+PayPal
+Perplexity
+Pinterest
+Red Hat
+Reddit
+Robinhood
+Roblox
+Samsara
+Scale AI
+Shopify
+Sierra AI
+Snap
+Spotify
+Square
+Stubhub
+Tesla
+TikTok
+Warner Bros
+Workday
+Yahoo
+Zynga
+Citadel
+Jane Street
+Two Sigma
+Jump Trading
+Hudson River Trading
+Optiver
+IMC Trading
+SIG
+Akuna Capital
+Point72
+Millennium
+Balyasny
+Bridgewater
+AQR
+Man Group
+Goldman Sachs
+JP Morgan
+Bank of America
+Citi
+Barclays
+UBS
+Evercore
+Lazard
+Centerview Partners
+Moelis and Company
+Jefferies
+Houlihan Lokey
+PJT Partners
+Fidelity
+Capital One
+Vanguard
+Eight Sleep

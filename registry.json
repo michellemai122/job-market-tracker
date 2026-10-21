@@ -1,0 +1,405 @@
+{
+  "found": [
+    {
+      "company": "Airbnb",
+      "provider": "greenhouse",
+      "slug": "airbnb",
+      "count": 189
+    },
+    {
+      "company": "Akuna Capital",
+      "provider": "greenhouse",
+      "slug": "akunacapital",
+      "count": 33
+    },
+    {
+      "company": "AlphaSense",
+      "provider": "greenhouse",
+      "slug": "alphasense",
+      "count": 213
+    },
+    {
+      "company": "Anthropic",
+      "provider": "greenhouse",
+      "slug": "anthropic",
+      "count": 398
+    },
+    {
+      "company": "Anysphere Cursor",
+      "provider": "ashby",
+      "slug": "cursor",
+      "count": 113
+    },
+    {
+      "company": "Appian",
+      "provider": "greenhouse",
+      "slug": "appian",
+      "count": 192
+    },
+    {
+      "company": "AQR",
+      "provider": "greenhouse",
+      "slug": "aqr",
+      "count": 49
+    },
+    {
+      "company": "Arcade AI",
+      "provider": "ashby",
+      "slug": "arcadeai",
+      "count": 13
+    },
+    {
+      "company": "Asana",
+      "provider": "greenhouse",
+      "slug": "asana",
+      "count": 148
+    },
+    {
+      "company": "Baseten",
+      "provider": "ashby",
+      "slug": "baseten",
+      "count": 64
+    },
+    {
+      "company": "Bytedance",
+      "provider": "smartrecruiters",
+      "slug": "bytedance",
+      "count": 2
+    },
+    {
+      "company": "Capital One",
+      "provider": "lever",
+      "slug": "capital",
+      "count": 41
+    },
+    {
+      "company": "Cognition",
+      "provider": "ashby",
+      "slug": "cognition",
+      "count": 79
+    },
+    {
+      "company": "Coinbase",
+      "provider": "greenhouse",
+      "slug": "coinbase",
+      "count": 163
+    },
+    {
+      "company": "Databricks",
+      "provider": "greenhouse",
+      "slug": "databricks",
+      "count": 808
+    },
+    {
+      "company": "Decagon",
+      "provider": "ashby",
+      "slug": "decagon",
+      "count": 122
+    },
+    {
+      "company": "Dropbox",
+      "provider": "greenhouse",
+      "slug": "dropbox",
+      "count": 37
+    },
+    {
+      "company": "Duolingo",
+      "provider": "greenhouse",
+      "slug": "duolingo",
+      "count": 65
+    },
+    {
+      "company": "Eight Sleep",
+      "provider": "ashby",
+      "slug": "eightsleep",
+      "count": 53
+    },
+    {
+      "company": "ElevenLabs",
+      "provider": "ashby",
+      "slug": "elevenlabs",
+      "count": 225
+    },
+    {
+      "company": "Figma",
+      "provider": "greenhouse",
+      "slug": "figma",
+      "count": 176
+    },
+    {
+      "company": "Harvey",
+      "provider": "ashby",
+      "slug": "harvey",
+      "count": 358
+    },
+    {
+      "company": "Hudson River Trading",
+      "provider": "greenhouse",
+      "slug": "hrttalentcommunity",
+      "count": 3
+    },
+    {
+      "company": "IMC Trading",
+      "provider": "greenhouse",
+      "slug": "imc",
+      "count": 158
+    },
+    {
+      "company": "Instacart",
+      "provider": "greenhouse",
+      "slug": "instacart",
+      "count": 117
+    },
+    {
+      "company": "IXL Learning",
+      "provider": "greenhouse",
+      "slug": "ixllearning",
+      "count": 116
+    },
+    {
+      "company": "Jane Street",
+      "provider": "greenhouse",
+      "slug": "janestreet",
+      "count": 225
+    },
+    {
+      "company": "Jump Trading",
+      "provider": "greenhouse",
+      "slug": "jumptrading",
+      "count": 105
+    },
+    {
+      "company": "LinkedIn",
+      "provider": "greenhouse",
+      "slug": "linkedin",
+      "count": 53
+    },
+    {
+      "company": "Lovable",
+      "provider": "ashby",
+      "slug": "lovable",
+      "count": 64
+    },
+    {
+      "company": "Lyft",
+      "provider": "greenhouse",
+      "slug": "lyft",
+      "count": 169
+    },
+    {
+      "company": "Man Group",
+      "provider": "greenhouse",
+      "slug": "mangroup",
+      "count": 59
+    },
+    {
+      "company": "Mercor",
+      "provider": "ashby",
+      "slug": "mercor",
+      "count": 78
+    },
+    {
+      "company": "Miro",
+      "provider": "ashby",
+      "slug": "miro",
+      "count": 46
+    },
+    {
+      "company": "Modal Labs",
+      "provider": "ashby",
+      "slug": "modal",
+      "count": 31
+    },
+    {
+      "company": "Mozilla",
+      "provider": "greenhouse",
+      "slug": "mozilla",
+      "count": 86
+    },
+    {
+      "company": "Notion",
+      "provider": "ashby",
+      "slug": "notion",
+      "count": 110
+    },
+    {
+      "company": "OKX",
+      "provider": "greenhouse",
+      "slug": "okx",
+      "count": 334
+    },
+    {
+      "company": "OpenAI",
+      "provider": "ashby",
+      "slug": "openai",
+      "count": 735
+    },
+    {
+      "company": "Perplexity",
+      "provider": "ashby",
+      "slug": "perplexity",
+      "count": 87
+    },
+    {
+      "company": "Physical Intelligence",
+      "provider": "ashby",
+      "slug": "physicalintelligence",
+      "count": 29
+    },
+    {
+      "company": "Pinterest",
+      "provider": "greenhouse",
+      "slug": "pinterest",
+      "count": 226
+    },
+    {
+      "company": "Point72",
+      "provider": "greenhouse",
+      "slug": "point72",
+      "count": 232
+    },
+    {
+      "company": "Ramp",
+      "provider": "ashby",
+      "slug": "ramp",
+      "count": 120
+    },
+    {
+      "company": "Reddit",
+      "provider": "greenhouse",
+      "slug": "reddit",
+      "count": 187
+    },
+    {
+      "company": "Replit",
+      "provider": "ashby",
+      "slug": "replit",
+      "count": 89
+    },
+    {
+      "company": "Robinhood",
+      "provider": "greenhouse",
+      "slug": "robinhood",
+      "count": 128
+    },
+    {
+      "company": "Roblox",
+      "provider": "greenhouse",
+      "slug": "roblox",
+      "count": 220
+    },
+    {
+      "company": "Samsara",
+      "provider": "greenhouse",
+      "slug": "samsara",
+      "count": 290
+    },
+    {
+      "company": "Scale AI",
+      "provider": "greenhouse",
+      "slug": "scaleai",
+      "count": 219
+    },
+    {
+      "company": "Sierra",
+      "provider": "ashby",
+      "slug": "sierra",
+      "count": 188
+    },
+    {
+      "company": "Spotify",
+      "provider": "lever",
+      "slug": "spotify",
+      "count": 103
+    },
+    {
+      "company": "Stripe",
+      "provider": "greenhouse",
+      "slug": "stripe",
+      "count": 550
+    },
+    {
+      "company": "Suno",
+      "provider": "ashby",
+      "slug": "suno",
+      "count": 65
+    },
+    {
+      "company": "Uber",
+      "provider": "smartrecruiters",
+      "slug": "uber",
+      "count": 1
+    },
+    {
+      "company": "Vercel",
+      "provider": "greenhouse",
+      "slug": "vercel",
+      "count": 80
+    },
+    {
+      "company": "Visa",
+      "provider": "smartrecruiters",
+      "slug": "visa",
+      "count": 2
+    }
+  ],
+  "missing": [
+    "Salesforce",
+    "DoorDash",
+    "Meta",
+    "Google",
+    "Microsoft",
+    "Atlassian",
+    "Intuit",
+    "Adobe",
+    "Amazon",
+    "Blackrock",
+    "Citrix",
+    "Cisco",
+    "DE Shaw",
+    "Ebay",
+    "Indeed",
+    "Mastercard",
+    "Lenovo",
+    "American Express",
+    "Mojang",
+    "Electronic Arts",
+    "PayPal",
+    "Expedia Group",
+    "Kleiner Perkins",
+    "Shopify",
+    "Snap",
+    "Stubhub",
+    "TikTok",
+    "Tesla",
+    "Square",
+    "Workday",
+    "Yahoo",
+    "Red Hat",
+    "Citadel",
+    "Zynga",
+    "Optiver",
+    "SIG",
+    "Millennium",
+    "Warner Bros",
+    "Balyasny",
+    "Bridgewater",
+    "Citi",
+    "Two Sigma",
+    "UBS",
+    "Barclays",
+    "Evercore",
+    "Lazard",
+    "Goldman Sachs",
+    "Jefferies",
+    "Hudson River Trading",
+    "JP Morgan",
+    "Fidelity",
+    "Vanguard",
+    "Bank of America",
+    "Centerview Partners",
+    "Houlihan Lokey",
+    "PJT Partners",
+    "Moelis and Company"
+  ]
+}

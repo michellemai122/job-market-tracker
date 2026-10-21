@@ -1,0 +1,38 @@
+{
+  "_about": "Hand-checked WE26 fair roles/notes for companies whose careers sites have no feed swe_fair.py can read. Checked 2026-10-20. swe_fair.py merges these in on every run.",
+  "roles": [
+    ["Lam Research", "EPG Power Hiring Event | Process & Product Engineers | 2026 & 2027 Bachelor's & Master's Graduates", "Fremont, CA", "https://careers.lamresearch.com/careers?pid=1099556394360", "2026-10-01", "$73,000 - $135,000"],
+    ["Lam Research", "Field Service Engineer - Early Career Opportunity", "Chandler, AZ; Austin, TX; Boise, ID; Rose Hill, VA; Hillsboro, OR", "https://careers.lamresearch.com/careers?pid=1099553138186", "2026-04-16", "$53,000 - $111,000"],
+    ["Lam Research", "Field Service Engineer 1", "NM, US", "https://careers.lamresearch.com/careers?pid=1099556261879", "2026-09-29", ""],
+    ["Eaton", "Engineering & Technology Early Career Leadership Development Program (grad before Aug 2027)", "Moon Township, PA (rotates Raleigh / Pittsburgh / Milwaukee)", "https://www.eaton.com/us/en-us/company/careers.html", "2026-09-01", "$90,000 - $104,000"],
+    ["MIT Lincoln Laboratory", "Associate Staff (recent-grad hiring range; many groups: radar signal processing, AI/ML, space systems, air defense)", "Lexington, MA", "https://careers.ll.mit.edu/job/Lexington-Associate-Staff-MA-02420/1364554500", "2026", "$116,400 - $140,000"],
+    ["Qnity Electronics", "2027 Entry Level Rotational Program - Engineering (LEAP)", "Multiple US plants (relocation required)", "https://www.builtinboston.com/job/2027-entry-level-rotational-program-engineering-leap/10485869", "2026", ""],
+    ["Qnity Electronics", "2027 Entry Level Engineering Direct Hire Opportunities", "Dayton, OH; Marlborough, DE", "https://www.tealhq.com/job/entry-level-engineer_7ea1a93a75ee9d5972503a8ade15496eeca41", "2026", "$58,800 - $92,400"],
+    ["Boston Scientific", "Electrical Engineer I", "Arden Hills, MN", "https://www.dice.com/job-detail/00b29ed0-3b5d-4ee0-928d-05e94f24bfe4", "2026", "$59,900 - $113,800"],
+    ["Constellation Energy", "Entry Level E01 Engineer - New Graduate (EE/ME/Nuclear/ChemE/Civil)", "Nuclear plant sites (US)", "https://app.energyhire.com/job-board/electrical-engineer-lusby-md-0b2a268c-8a6f-43d6-b5f0-a2b379003957", "2026", "$82,500 - $82,500"],
+    ["PG&E", "Associate Substation Project Engineer", "Oakland, CA", "https://careers.pge.com/job/Oakland-Associate-Substation-Project-Engineer-CA-94612/1426025700/", "2026", "$99,936 - $150,108"],
+    ["PG&E", "Associate Electric Distribution Operations Engineer", "Fresno, CA; Rocklin, CA", "https://jobs.pge.com/job/fresno/associate-electric-distribution-operations-engineer/29673/95261976336", "2026", ""],
+    ["Lockheed Martin", "Electrical Engineer (entry level / recent graduate, US citizen)", "Grand Prairie, TX", "https://www.lockheedmartinjobs.com/job/grand-prairie/electrical-engineer-asc/694/94978987504", "2026-05-11", ""],
+    ["World Wide Technology", "Associate Academy - Associate Consulting Systems Engineer (12-month program)", "St. Louis, MO + US offices", "https://www.wwt.com/community/university-relations/about", "2026", ""],
+    ["Schneider Electric", "Schneider Development Program - Operations & Engineering (3-yr rotational; last posted range)", "US plants (relocation required)", "https://www.themuse.com/jobs/schneiderelectric/global-supply-chain-development-program", "2025", "$66,000 - $99,000"]
+  ],
+  "notes": {
+    "Datadog": "No new-grad SWE req live on its Greenhouse board as of 10/20 (its New Grad SWE usually posts in late summer). SWE I base is about $143K (Levels.fyi). Ask at booth whether the 2027 req is coming.",
+    "Microsoft": "Microsoft's own search hides new-grad roles under plain titles; rows come from the Simplify new-grad list. Check careers.microsoft.com 'Students and graduates'.",
+    "Apple": "Apple posts new-grad roles without 'new grad' in the title; rows come from the Simplify new-grad list (Apple pages give base pay).",
+    "Nintendo of America": "No 2027 new-grad posting found. Redmond NTD hires mostly contract Associate SWE roles ($50-81/hr).",
+    "Navy Federal Credit Union": "No 2027 full-time new-grad tech program found; Summer Associate internships + a Finance Rotation Program.",
+    "Pacific Northwest National Lab": "Hires Post-Bachelor Research Associates (all majors) year-round; pay not public. Ask the recruiter.",
+    "Ford Motor Company": "Ford College Graduate (FCG) program usually posts Sep-Oct; no 2027 req or pay range found yet.",
+    "Edwards Lifesciences": "Only 2027 co-ops and internships so far (CA intern base $54-72K annualized); interns convert into New Grad Programs.",
+    "Burns & McDonnell": "Its '2027 EE entry-level - express interest' req closed 8/21. Entry EE base is roughly $63-85K (PayScale). Ask about late-cycle openings.",
+    "Lenovo": "No 2027 new-grad posting found (Morrisville NC is the US hub).",
+    "Delta Air Lines": "Runs rotational/co-op programs on its Avature site; no 2027 tech new-grad req found.",
+    "Mitsubishi Power Americas": "No US 2027 new-grad program found; IGNITE internship (mostly ME).",
+    "Exponent": "Consulting engineers; usually hires MS/PhD. Associate pay averages about $115K (Indeed).",
+    "ASML": "No US full-time new-grad posting found; summer 2027 internships at Wilton CT / San Diego expected this fall.",
+    "onsemi": "No US 2027 new-grad posting found (NCG programs are mainly in Asia).",
+    "ExxonMobil": "Careers search shows only 'Students Seeking Full-Time Employment in Trading' (Spring, TX) for 2027 US; engineering campus hiring usually goes through university recruiting.",
+    "Lockheed Martin": "lockheedmartinjobs.com blocks automated search; use the site's 'Early careers' filter for live reqs."
+  }
+}
