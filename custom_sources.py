@@ -93,6 +93,10 @@ def from_simplify(*_):
 # provider name -> fetcher. Poller checks this map for non-standard providers.
 CUSTOM_FETCHERS = {"amazon": from_amazon, "simplify": from_simplify}
 
+# Startup boards (Sequoia, a16z, Accel, YC, Wellfound, Built In NYC)
+from startup_boards import STARTUP_FETCHERS
+CUSTOM_FETCHERS.update(STARTUP_FETCHERS)
+
 
 if __name__ == "__main__":
     jobs = from_amazon()

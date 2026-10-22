@@ -88,7 +88,7 @@ def send_email_alert(new_rows):
 
 # ---------------------------------------------------------------- classification
 SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|\blead\b|director|"
-                    r"vp|head of|architect|\bii\b|\biii\b|\biv\b|distinguished|"
+                    r"vp|vice\s+president|head of|group\s+product|founding|architect|\bii\b|\biii\b|\biv\b|distinguished|"
                     r"experienced|expert|\d\+\s*years)\b", re.I)
 # A role only counts as NEW GRAD if the title carries one of these signals.
 NEWGRAD = re.compile(r"(new\s*grad|new\s*graduate|new\s*college\s*grad|"
@@ -103,7 +103,7 @@ INTERN = re.compile(r"\b(intern|internship|co-?op|summer\s*20\d\d)\b", re.I)
 APM = re.compile(r"\b(a ?pm|associate\s+product\s+manager|product\s+manager[,\s-]*"
                  r"(new\s*grad|university|early|rotational|associate)|rotational\s+"
                  r"product|product\s+management\s+(new\s*grad|rotational|associate))\b", re.I)
-FDE = re.compile(r"forward[\s-]*deployed", re.I)
+FDE = re.compile(r"forward[\s-]*deployed[\s,-]*(software|engineer|engineering|ai\s+engineer|ml\b|product|solutions|data)", re.I)
 AIENG = re.compile(r"\b(ai\s+engineer|a\.i\.\s+engineer|machine\s+learning\s+engineer|"
                    r"ml\s+engineer|applied\s+(ai|ml)|member\s+of\s+technical\s+staff|"
                    r"gen(erative)?\s*ai\s+engineer)\b", re.I)
@@ -166,7 +166,15 @@ NON_US = re.compile(r"\b(london|dublin|ireland|toronto|vancouver|montreal|canada
                     r"hong kong|shanghai|beijing|shenzhen|china|seoul|korea|"
                     r"mexico|brazil|sao paulo|zurich|switzerland|stockholm|sweden|"
                     r"madrid|barcelona|spain|milan|italy|belgrade|serbia|cyprus|"
-                    r"limassol|lisbon|portugal|dubai|uae|bulgaria|romania|"
+                    r"limassol|lisbon|portugal|dubai|uae|bulgaria|romania|bucharest|"
+                    r"costa rica|heredia|colombia|bogota|argentina|buenos aires|chile|"
+                    r"philippines|manila|vietnam|indonesia|malaysia|taiwan|taipei|"
+                    r"prague|czech|budapest|hungary|krakow|ukraine|kyiv|lithuania|"
+                    r"estonia|denmark|copenhagen|norway|oslo|finland|helsinki|austria|"
+                    r"vienna|belgium|brussels|greece|athens|turkey|istanbul|egypt|"
+                    r"nigeria|lagos|kenya|nairobi|south africa|cape town|pakistan|"
+                    r"new zealand|auckland|ontario|quebec|british columbia|ottawa|"
+                    r"qatar|doha|iceland|reykjav[ií]k|saudi|riyadh|"
                     r"united kingdom|\buk\b|emea|apac|latam)\b", re.I)
 
 
@@ -178,6 +186,36 @@ def location_ok(loc):
         # foreign location named -> keep only if it ALSO names a concrete US place
         return bool(US_STRONG.search(loc))
     return True
+
+
+# Michelle only wants California, the New York tri-state area (NY, NJ, CT),
+# Chicago and Texas. Remote-only and
+# unknown locations are dropped. A multi-city posting counts if any city matches.
+WANTED_PLACE = re.compile(r"\b(california|san francisco|south san francisco|\bsf\b|bay area|"
+                          r"silicon valley|los angeles|san jose|palo alto|mountain view|"
+                          r"sunnyvale|menlo park|santa clara|redwood city|san mateo|cupertino|"
+                          r"oakland|berkeley|emeryville|foster city|burlingame|san bruno|"
+                          r"fremont|milpitas|los gatos|irvine|san diego|santa monica|"
+                          r"culver city|el segundo|hawthorne|pasadena|long beach|laguna|"
+                          r"costa mesa|newport beach|sacramento|"
+                          r"new york|nyc|manhattan|brooklyn|queens|bronx|long island|"
+                          r"westchester|white plains|"
+                          r"new jersey|jersey city|hoboken|newark|princeton|"
+                          r"morristown|edison|parsippany|"
+                          r"connecticut|stamford|greenwich|norwalk|new haven|hartford|"
+                          r"chicago|"
+                          r"texas|austin|dallas|houston|san antonio|plano|fort worth|irving)\b", re.I)
+# State codes alone ("Palo Alto, CA" is caught above, but "Albany, NY" isn't).
+# "CA" is also Canada's country code, so a bare code doesn't count next to a
+# foreign place ("Toronto, ON, CA").
+WANTED_CODE = re.compile(r"\b(ca|ny|nj|ct|tx)\b", re.I)
+
+
+def location_wanted(loc):
+    loc = loc or ""
+    if WANTED_PLACE.search(loc):
+        return True
+    return bool(WANTED_CODE.search(loc)) and not NON_US.search(loc)
 
 
 # Require a real salary figure: comma-thousands ($204,000) or K-suffix ($204K).
@@ -294,6 +332,18 @@ def enrich_comp(job):
     return extract_comp(text)
 
 
+# The same posting reaches us from several places (a company's own feed, Simplify,
+# and VC boards that repost it), each with its own uid and URL shape. The ATS job
+# id is what they share, so dedupe on that too.
+ATS_ID = re.compile(r"greenhouse\.io/(?:[^/]+/)*jobs/(\d{6,})|gh_jid=(\d{6,})|"
+                    r"(?:ashbyhq\.com|lever\.co)/[^/]+/([0-9a-f]{8}-[0-9a-f-]{27})", re.I)
+
+
+def ats_id(url):
+    m = ATS_ID.search(url or "")
+    return next((g for g in m.groups() if g), "") if m else ""
+
+
 # ---------------------------------------------------------------- spreadsheet
 def load_seen():
     if os.path.exists(SEEN_PATH):
@@ -349,20 +399,26 @@ def main():
             except Exception:
                 pass
 
+    # uids are "<source>:<id>"; for ATS feeds the id part is the ATS job id
+    known_ids = {s.rsplit(":", 1)[1] for s in seen if ":" in s and not s.startswith("http")}
     new_rows = []
     for j in all_jobs:
         url = j.get("url", "")
-        if j["uid"] in seen or (url and url in seen):
+        aid = ats_id(url)
+        if j["uid"] in seen or (url and url in seen) or (aid and aid in known_ids):
             continue
         # pre-curated new-grad sources classify by role family only; others strict
         cls = classify_role(j["title"]) if j.get("prefiltered_newgrad") else classify(j["title"])
         if not cls:
             continue
-        if not location_ok(j["location"]):
+        if not location_wanted(j["location"]):
             continue
         seen.add(j["uid"])       # dedupe by source id
         if url:
             seen.add(url)        # and by URL, so two sources don't double-list
+        if aid:
+            seen.add(f"ats:{aid}")  # and by ATS job id, whatever board reposted it
+            known_ids.add(aid)
         category, level = cls
         new_rows.append({**j, "category": category, "level": level})
 
